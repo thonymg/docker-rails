@@ -13,7 +13,7 @@ describe 'Post management' do
     scenario 'navigates through posts', js: true do
       visit posts_path
 
-      expect(page).to have_selector('h1', text: 'Example application')
+      expect(page).to have_selector('h1', text: 'Example application !yeahhhh rakoto')
       expect(page).to have_css('table tbody tr', count: 25)
       expect(page).to have_selector('#post-count', text: '31 Posts')
       expect(page).to_not have_link('', href: new_post_path)
